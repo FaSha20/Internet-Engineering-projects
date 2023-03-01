@@ -4,17 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bea65a4-de54-4bbe-92a3-8e3fcddd11a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Users.java" afterDir="false" />
+    <list default="true" id="5bea65a4-de54-4bbe-92a3-8e3fcddd11a9" name="Changes" comment="build the general structure, User and Main objects.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Buylists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Commodities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Commodity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Providers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Ratings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BuylistsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CommoditiesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RatingsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit3 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -34,24 +43,100 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2M8rxXeD7zNiCraf9jvRXDju2gE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "c93bf9a243a391a65da5b60116ee9a5c"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CommoditiesTest">
+    <configuration name="CommoditiesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CA1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommoditiesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommoditiesTest.testFindByCategoryNotExistCat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CA1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommoditiesTest" />
+      <option name="METHOD_NAME" value="testFindByCategoryNotExistCat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommoditiesTest.testFindByIdNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CA1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommoditiesTest" />
+      <option name="METHOD_NAME" value="testFindByIdNotExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RatingsTest.testAddRating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CA1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RatingsTest" />
+      <option name="METHOD_NAME" value="testAddRating" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RatingsTest.testAddRatingSameUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CA1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RatingsTest" />
+      <option name="METHOD_NAME" value="testAddRatingSameUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CommoditiesTest" />
+        <item itemvalue="JUnit.CommoditiesTest.testFindByCategoryNotExistCat" />
+        <item itemvalue="JUnit.CommoditiesTest.testFindByIdNotExist" />
+        <item itemvalue="JUnit.RatingsTest.testAddRatingSameUser" />
+        <item itemvalue="JUnit.RatingsTest.testAddRating" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,8 +148,24 @@
       <workItem from="1677160303872" duration="15553000" />
       <workItem from="1677322037662" duration="1467000" />
       <workItem from="1677326562147" duration="1233000" />
-      <workItem from="1677390138085" duration="1573000" />
+      <workItem from="1677390138085" duration="10190000" />
+      <workItem from="1677557161174" duration="3663000" />
+      <workItem from="1677575783972" duration="19395000" />
+      <workItem from="1677653236091" duration="40812000" />
     </task>
+    <task id="LOCAL‎−۰۰۰۰۱" summary="build the general structure, User and Main objects.">
+      <created>1677432798024</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۱" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۱" />
+      <updated>1677432798024</updated>
+    </task>
+    <task id="LOCAL‎−۰۰۰۰۲" summary="build the general structure, User and Main objects.">
+      <created>1677432814345</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۲" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۲" />
+      <updated>1677432814345</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,5 +181,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="build the general structure, User and Main objects." />
+    <option name="LAST_COMMIT_MESSAGE" value="build the general structure, User and Main objects." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CA1$Main.ic" NAME="Main Coverage Results" MODIFIED="1677687062806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

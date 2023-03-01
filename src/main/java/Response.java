@@ -1,17 +1,23 @@
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+
 public class Response {
     private boolean success;
-    private String data;
+    private Object data;
 
-    public Response(boolean suc, String dat){
+    public Response(boolean suc, Object dat){
         success = suc;
         data = dat;
     }
-    public boolean getSuccess(){return success;};
+   public boolean getSuccess(){return success;};
 
-    public String getData(){return data;};
+    public Object getData(){return data;};
 
     public void setSuccess(boolean status){this.success = status;};
 
-    public void setData(String data){this.data = data;};
+    public void setData(Object data){this.data = data;};
 
 }
